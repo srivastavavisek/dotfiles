@@ -1,0 +1,48 @@
+# ██╗██████╗░██████╗░██╗░░░░░░█████╗░░█████╗░██╗░░██╗░██████╗
+# ╚═╝╚════██╗██╔══██╗██║░░░░░██╔══██╗██╔══██╗██║░██╔╝██╔════╝
+# ██║░█████╔╝██████╦╝██║░░░░░██║░░██║██║░░╚═╝█████═╝░╚█████╗░
+# ██║░╚═══██╗██╔══██╗██║░░░░░██║░░██║██║░░██╗██╔═██╗░░╚═══██╗
+# ██║██████╔╝██████╦╝███████╗╚█████╔╝╚█████╔╝██║░╚██╗██████╔╝
+# ╚═╝╚═════╝░╚═════╝░╚══════╝░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░
+
+# Global properties
+[global]
+separator_block_width=16
+
+[keyboard]
+command=keyboard
+interval=once
+signal=13
+
+[brightness]
+label=󰃟 
+command=echo "$(($(brightnessctl get) * 100 / $(brightnessctl max)))%"
+interval=once
+signal=2
+
+[volume_mute]
+command=volume mute
+interval=once
+signal=11
+separator=false
+separator_block_width=0
+markup=pango
+
+[volume_num]
+command=volume num
+interval=once
+signal=10
+
+[battery]
+command=battery
+interval=2
+
+[wifi]
+label=󰤥
+command=wifi
+interval=9
+instance=wlp3s0
+
+[time]
+command=date +'%a %d %b %H:%M'
+interval=1
