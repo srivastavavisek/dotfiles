@@ -49,6 +49,7 @@ alias ltt='eza --tree --long --git --icons'
 alias py='python3'
 alias pip='pip3'
 alias actpy=' source ~/.venv/bin/activate'
+alias deact=' deactivate'
 
 # grep
 alias grep='grep --color=auto' 

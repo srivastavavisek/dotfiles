@@ -46,6 +46,7 @@ path+=(
 # export PATH
 # zsh automatically exports PATH
 
+
 #
 # _______ BINDKEYS ____________________________________________________________
 #
